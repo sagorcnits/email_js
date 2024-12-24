@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email js</title>
+    <!-- style css linking -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- email js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+  <body>
+    <form id="contact-form">
+      <h1>Send Email without server</h1>
+      <!-- name field -->
+      <div>
+        <label for="name">Your Name:</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          required
+          placeholder="name"
+        />
+      </div>
+      <!-- email field -->
+      <div>
+        <label for="email">Your Email:</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="user_email"
+          required
+          placeholder="email"
+        />
+      </div>
+      <!-- mesage field -->
+      <div>
+        <label for="message">Message:</label> <br />
+        <textarea
+          placeholder="message"
+          id="message"
+          name="user_message"
+          required
+        ></textarea>
+      </div>
+      <!-- submit button -->
+      <button type="submit">Send</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
